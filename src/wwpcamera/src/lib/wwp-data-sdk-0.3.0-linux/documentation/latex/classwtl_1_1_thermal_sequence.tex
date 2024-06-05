@@ -1,0 +1,313 @@
+\hypertarget{classwtl_1_1_thermal_sequence}{}\section{wtl\+:\+:Thermal\+Sequence Class Reference}
+\label{classwtl_1_1_thermal_sequence}\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+
+
+Base Class for sequences of thermograms of all file types.  
+
+
+Inheritance diagram for wtl\+:\+:Thermal\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwtl_1_1_thermal_sequence}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classwtl_1_1_thermal_sequence_a51287347e2d8bfa39344d705bd720ef5}{$\sim$\+Thermal\+Sequence} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_thermal_sequence_a3f2298f76bddef8ad4368e412550f81d}{Thermal\+Sequence} (const \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} \&x)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} \& \hyperlink{classwtl_1_1_thermal_sequence_a85706e752fc1fc7c1748cb2f8bedb42d}{operator=} (const \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} \&x)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} \& \hyperlink{classwtl_1_1_thermal_sequence_a5bbbad98670f6179ce3c349fbe8e3086}{get\+Sequence\+Meta\+Data} ()
+\begin{DoxyCompactList}\small\item\em Get \hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} instance which contains non-\/temperature related data about an image sequence. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} \& \hyperlink{classwtl_1_1_thermal_sequence_a04999d96848ef73cc7b9de708f025fa2}{get\+Sequence\+Meta\+Data} () const
+\begin{DoxyCompactList}\small\item\em Get constant \hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} instance which contains non-\/temperature related data about an image sequence. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_thermal_image}{wtl\+::\+Thermal\+Image} $>$ \hyperlink{classwtl_1_1_thermal_sequence_afa7db744c4112df11b20026eae1da399}{thermal\+At} (int index) const =0
+\begin{DoxyCompactList}\small\item\em Returns thermal image representation of frame at given position.\+O nly for sequences with temperature data. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ uint8\+\_\+t $>$ \hyperlink{classwtl_1_1_thermal_sequence_a0d13f29f0f89343516031c5146b62792}{get\+R\+G\+B\+Frame\+At} (int index)=0
+\begin{DoxyCompactList}\small\item\em Returns 1d array with rgb representaion of frame at given position. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_thermal_sequence_a47103fe0b8c101c0d2b77499f464de93}{set\+Palette} (const std\+::string \&palette)
+\begin{DoxyCompactList}\small\item\em Set palette to sequence. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_thermal_sequence_a5535a6cf8de61dbcf0c3d49f186c7370}{set\+Palette} (std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_palette}{wtl\+::\+Palette} $>$ palette)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classwtl_1_1_thermal_sequence_a47103fe0b8c101c0d2b77499f464de93}{wtl\+::\+Thermal\+Sequence\+::set\+Palette} \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_thermal_sequence_aedae757f2de72cee3dd3b74a5939c750}{set\+Manual\+Range} (bool manual\+Range\+Active)
+\begin{DoxyCompactList}\small\item\em Set manual range. \end{DoxyCompactList}\item 
+bool \hyperlink{classwtl_1_1_thermal_sequence_a7d3fb395f892aa2c040c889d2c4dc4ce}{is\+Manual\+Range\+Active} ()
+\begin{DoxyCompactList}\small\item\em Is Manual Range Active. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_palette}{wtl\+::\+Palette} $>$ \hyperlink{classwtl_1_1_thermal_sequence_a1a08643d428876f32e3155a9cd0c9f2e}{get\+Palette} () const
+\item 
+int \hyperlink{classwtl_1_1_thermal_sequence_a392e7c6e2b832d05c9cdb931c7cddb4f}{get\+File\+Size} ()
+\begin{DoxyCompactList}\small\item\em File\+Size in bytes. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classwtl_1_1_thermal_sequence_a572ec84280f0edc98c5ad0c0a0593335}{is\+Radiometric\+Sequence} () const =0
+\begin{DoxyCompactList}\small\item\em Decide whether sequence is composed of thermal image instances with radiometric temperature data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwtl_1_1_thermal_sequence_a222d1dcbb659a83cff8f60a431f8a370}{Thermal\+Sequence} (const std\+::string \&path, std\+::shared\+\_\+ptr$<$ wtl\+::\+F\+F\+F\+File\+Manager $>$ mngr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_thermal_sequence_ae42f26a732f24d5b93182e320b360282}{Thermal\+Sequence} ()=default
+\begin{DoxyCompactList}\small\item\em \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} $>$ \hyperlink{classwtl_1_1_thermal_sequence_a34961af460960c62b77a2d11fd49e2d3}{m\+\_\+\+Sequence\+Meta\+Data}
+\item 
+std\+::shared\+\_\+ptr$<$ wtl\+::\+F\+F\+F\+File\+Manager $>$ \hyperlink{classwtl_1_1_thermal_sequence_a8b3a995d93dad09344825622df9f418b}{m\+\_\+\+File\+Manager}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_palette}{Palette} $>$ \hyperlink{classwtl_1_1_thermal_sequence_a513c59e37dca388f0f68cbb24e527aa9}{m\+\_\+\+Palette}
+\item 
+bool \hyperlink{classwtl_1_1_thermal_sequence_a9af26492b66fcd91aecb62aaf1508a8f}{m\+\_\+\+Manual\+Range\+Active} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base Class for sequences of thermograms of all file types. 
+
+Provides interface for extracting and saving data to sequences of thermal images. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a222d1dcbb659a83cff8f60a431f8a370}\label{classwtl_1_1_thermal_sequence_a222d1dcbb659a83cff8f60a431f8a370}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!Thermal\+Sequence@{Thermal\+Sequence}}
+\index{Thermal\+Sequence@{Thermal\+Sequence}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{Thermal\+Sequence()}{ThermalSequence()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily wtl\+::\+Thermal\+Sequence\+::\+Thermal\+Sequence (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{std\+::shared\+\_\+ptr$<$ wtl\+::\+F\+F\+F\+File\+Manager $>$}]{mngr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} constructor. 
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_ae42f26a732f24d5b93182e320b360282}\label{classwtl_1_1_thermal_sequence_ae42f26a732f24d5b93182e320b360282}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!Thermal\+Sequence@{Thermal\+Sequence}}
+\index{Thermal\+Sequence@{Thermal\+Sequence}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{Thermal\+Sequence()}{ThermalSequence()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily wtl\+::\+Thermal\+Sequence\+::\+Thermal\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} constructor. 
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a51287347e2d8bfa39344d705bd720ef5}\label{classwtl_1_1_thermal_sequence_a51287347e2d8bfa39344d705bd720ef5}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!````~Thermal\+Sequence@{$\sim$\+Thermal\+Sequence}}
+\index{````~Thermal\+Sequence@{$\sim$\+Thermal\+Sequence}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{$\sim$\+Thermal\+Sequence()}{~ThermalSequence()}}
+{\footnotesize\ttfamily wtl\+::\+Thermal\+Sequence\+::$\sim$\+Thermal\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Class destructor. 
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a3f2298f76bddef8ad4368e412550f81d}\label{classwtl_1_1_thermal_sequence_a3f2298f76bddef8ad4368e412550f81d}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!Thermal\+Sequence@{Thermal\+Sequence}}
+\index{Thermal\+Sequence@{Thermal\+Sequence}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{Thermal\+Sequence()}{ThermalSequence()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily wtl\+::\+Thermal\+Sequence\+::\+Thermal\+Sequence (\begin{DoxyParamCaption}\item[{const \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Source thermal sequence. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a392e7c6e2b832d05c9cdb931c7cddb4f}\label{classwtl_1_1_thermal_sequence_a392e7c6e2b832d05c9cdb931c7cddb4f}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!get\+File\+Size@{get\+File\+Size}}
+\index{get\+File\+Size@{get\+File\+Size}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{get\+File\+Size()}{getFileSize()}}
+{\footnotesize\ttfamily int wtl\+::\+Thermal\+Sequence\+::get\+File\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+File\+Size in bytes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a1a08643d428876f32e3155a9cd0c9f2e}\label{classwtl_1_1_thermal_sequence_a1a08643d428876f32e3155a9cd0c9f2e}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!get\+Palette@{get\+Palette}}
+\index{get\+Palette@{get\+Palette}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{get\+Palette()}{getPalette()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_palette}{wtl\+::\+Palette} $>$ wtl\+::\+Thermal\+Sequence\+::get\+Palette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classwtl_1_1_palette}{Palette} instance that contains palette colors 
+
+\hyperlink{classwtl_1_1_palette}{Palette} instance that contains palette colors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a0d13f29f0f89343516031c5146b62792}\label{classwtl_1_1_thermal_sequence_a0d13f29f0f89343516031c5146b62792}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!get\+R\+G\+B\+Frame\+At@{get\+R\+G\+B\+Frame\+At}}
+\index{get\+R\+G\+B\+Frame\+At@{get\+R\+G\+B\+Frame\+At}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{get\+R\+G\+B\+Frame\+At()}{getRGBFrameAt()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$uint8\+\_\+t$>$ wtl\+::\+Thermal\+Sequence\+::get\+R\+G\+B\+Frame\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns 1d array with rgb representaion of frame at given position. 
+
+Colors of every pixel is determined by pixel temperature. Colors from current palette are used. 
+
+Implemented in \hyperlink{classwtl_1_1_sequence_radiometric_af0503fb4a89d9a356a4a68bad6da976d}{wtl\+::\+Sequence\+Radiometric}.
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a5bbbad98670f6179ce3c349fbe8e3086}\label{classwtl_1_1_thermal_sequence_a5bbbad98670f6179ce3c349fbe8e3086}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!get\+Sequence\+Meta\+Data@{get\+Sequence\+Meta\+Data}}
+\index{get\+Sequence\+Meta\+Data@{get\+Sequence\+Meta\+Data}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{get\+Sequence\+Meta\+Data()}{getSequenceMetaData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_sequence_meta_data}{wtl\+::\+Sequence\+Meta\+Data} \& wtl\+::\+Thermal\+Sequence\+::get\+Sequence\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get \hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} instance which contains non-\/temperature related data about an image sequence. 
+
+\begin{DoxyReturn}{Returns}
+Instance can be used to access sequence meta data such as resolution, duration, framerate etc. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a04999d96848ef73cc7b9de708f025fa2}\label{classwtl_1_1_thermal_sequence_a04999d96848ef73cc7b9de708f025fa2}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!get\+Sequence\+Meta\+Data@{get\+Sequence\+Meta\+Data}}
+\index{get\+Sequence\+Meta\+Data@{get\+Sequence\+Meta\+Data}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{get\+Sequence\+Meta\+Data()}{getSequenceMetaData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_sequence_meta_data}{wtl\+::\+Sequence\+Meta\+Data} \& wtl\+::\+Thermal\+Sequence\+::get\+Sequence\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get constant \hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data} instance which contains non-\/temperature related data about an image sequence. 
+
+\begin{DoxyReturn}{Returns}
+Instance can be used to access sequence meta data such as resolution, duration, framerate etc. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a7d3fb395f892aa2c040c889d2c4dc4ce}\label{classwtl_1_1_thermal_sequence_a7d3fb395f892aa2c040c889d2c4dc4ce}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!is\+Manual\+Range\+Active@{is\+Manual\+Range\+Active}}
+\index{is\+Manual\+Range\+Active@{is\+Manual\+Range\+Active}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{is\+Manual\+Range\+Active()}{isManualRangeActive()}}
+{\footnotesize\ttfamily bool wtl\+::\+Thermal\+Sequence\+::is\+Manual\+Range\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is Manual Range Active. 
+
+\begin{DoxyReturn}{Returns}
+manual\+Range\+Active true for active, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a572ec84280f0edc98c5ad0c0a0593335}\label{classwtl_1_1_thermal_sequence_a572ec84280f0edc98c5ad0c0a0593335}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!is\+Radiometric\+Sequence@{is\+Radiometric\+Sequence}}
+\index{is\+Radiometric\+Sequence@{is\+Radiometric\+Sequence}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{is\+Radiometric\+Sequence()}{isRadiometricSequence()}}
+{\footnotesize\ttfamily virtual bool wtl\+::\+Thermal\+Sequence\+::is\+Radiometric\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Decide whether sequence is composed of thermal image instances with radiometric temperature data. 
+
+\begin{DoxyReturn}{Returns}
+True if image contains temperature for every pixel 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classwtl_1_1_sequence_radiometric_aa0b063cfe218f95cd57412344d4f9a04}{wtl\+::\+Sequence\+Radiometric}.
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a85706e752fc1fc7c1748cb2f8bedb42d}\label{classwtl_1_1_thermal_sequence_a85706e752fc1fc7c1748cb2f8bedb42d}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!operator=@{operator=}}
+\index{operator=@{operator=}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence}\& wtl\+::\+Thermal\+Sequence\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classwtl_1_1_thermal_sequence}{Thermal\+Sequence} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Source thermal sequence. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_aedae757f2de72cee3dd3b74a5939c750}\label{classwtl_1_1_thermal_sequence_aedae757f2de72cee3dd3b74a5939c750}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!set\+Manual\+Range@{set\+Manual\+Range}}
+\index{set\+Manual\+Range@{set\+Manual\+Range}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{set\+Manual\+Range()}{setManualRange()}}
+{\footnotesize\ttfamily void wtl\+::\+Thermal\+Sequence\+::set\+Manual\+Range (\begin{DoxyParamCaption}\item[{bool}]{manual\+Range\+Active }\end{DoxyParamCaption})}
+
+
+
+Set manual range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manual\+Range\+Active} & true for activation, false for deactivation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a47103fe0b8c101c0d2b77499f464de93}\label{classwtl_1_1_thermal_sequence_a47103fe0b8c101c0d2b77499f464de93}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!set\+Palette@{set\+Palette}}
+\index{set\+Palette@{set\+Palette}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{set\+Palette()}{setPalette()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void wtl\+::\+Thermal\+Sequence\+::set\+Palette (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{palette }\end{DoxyParamCaption})}
+
+
+
+Set palette to sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palette} & Name of one of palettes provided by S\+DK.\\
+\hline
+\end{DoxyParams}
+Provided palettes\+: Blue\+Red, B\+W\+Iron, B\+W\+Iron1. B\+W\+Rainbow, B\+W\+Rainbow\+HC, Gradient. Gray, Iron, Iron1, Natural, Sepia, Steps, Temperature, W\+B\+R\+GB, Black\+Red, B\+W\+R\+GB, Fire, Rainbow, Rainbow\+HC. \mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a5535a6cf8de61dbcf0c3d49f186c7370}\label{classwtl_1_1_thermal_sequence_a5535a6cf8de61dbcf0c3d49f186c7370}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!set\+Palette@{set\+Palette}}
+\index{set\+Palette@{set\+Palette}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{set\+Palette()}{setPalette()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void wtl\+::\+Thermal\+Sequence\+::set\+Palette (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_palette}{wtl\+::\+Palette} $>$}]{palette }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classwtl_1_1_thermal_sequence_a47103fe0b8c101c0d2b77499f464de93}{wtl\+::\+Thermal\+Sequence\+::set\+Palette} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palette} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_afa7db744c4112df11b20026eae1da399}\label{classwtl_1_1_thermal_sequence_afa7db744c4112df11b20026eae1da399}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!thermal\+At@{thermal\+At}}
+\index{thermal\+At@{thermal\+At}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{thermal\+At()}{thermalAt()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classwtl_1_1_thermal_image}{wtl\+::\+Thermal\+Image}$>$ wtl\+::\+Thermal\+Sequence\+::thermal\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns thermal image representation of frame at given position.\+O nly for sequences with temperature data. 
+
+
+
+Implemented in \hyperlink{classwtl_1_1_sequence_radiometric_ae7b8f68b95bdda29cd202570c4fb9fbd}{wtl\+::\+Sequence\+Radiometric}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a8b3a995d93dad09344825622df9f418b}\label{classwtl_1_1_thermal_sequence_a8b3a995d93dad09344825622df9f418b}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!m\+\_\+\+File\+Manager@{m\+\_\+\+File\+Manager}}
+\index{m\+\_\+\+File\+Manager@{m\+\_\+\+File\+Manager}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{m\+\_\+\+File\+Manager}{m\_FileManager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$wtl\+::\+F\+F\+F\+File\+Manager$>$ wtl\+::\+Thermal\+Sequence\+::m\+\_\+\+File\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a9af26492b66fcd91aecb62aaf1508a8f}\label{classwtl_1_1_thermal_sequence_a9af26492b66fcd91aecb62aaf1508a8f}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!m\+\_\+\+Manual\+Range\+Active@{m\+\_\+\+Manual\+Range\+Active}}
+\index{m\+\_\+\+Manual\+Range\+Active@{m\+\_\+\+Manual\+Range\+Active}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Manual\+Range\+Active}{m\_ManualRangeActive}}
+{\footnotesize\ttfamily bool wtl\+::\+Thermal\+Sequence\+::m\+\_\+\+Manual\+Range\+Active = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a513c59e37dca388f0f68cbb24e527aa9}\label{classwtl_1_1_thermal_sequence_a513c59e37dca388f0f68cbb24e527aa9}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!m\+\_\+\+Palette@{m\+\_\+\+Palette}}
+\index{m\+\_\+\+Palette@{m\+\_\+\+Palette}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Palette}{m\_Palette}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classwtl_1_1_palette}{Palette}$>$ wtl\+::\+Thermal\+Sequence\+::m\+\_\+\+Palette\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_thermal_sequence_a34961af460960c62b77a2d11fd49e2d3}\label{classwtl_1_1_thermal_sequence_a34961af460960c62b77a2d11fd49e2d3}} 
+\index{wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}!m\+\_\+\+Sequence\+Meta\+Data@{m\+\_\+\+Sequence\+Meta\+Data}}
+\index{m\+\_\+\+Sequence\+Meta\+Data@{m\+\_\+\+Sequence\+Meta\+Data}!wtl\+::\+Thermal\+Sequence@{wtl\+::\+Thermal\+Sequence}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Sequence\+Meta\+Data}{m\_SequenceMetaData}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classwtl_1_1_sequence_meta_data}{Sequence\+Meta\+Data}$>$ wtl\+::\+Thermal\+Sequence\+::m\+\_\+\+Sequence\+Meta\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+

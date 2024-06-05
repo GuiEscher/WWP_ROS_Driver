@@ -1,0 +1,656 @@
+\hypertarget{classwtl_1_1_source_meta_data}{}\section{wtl\+:\+:Source\+Meta\+Data Class Reference}
+\label{classwtl_1_1_source_meta_data}\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+
+
+Image data not related to thermal analysis.  
+
+
+Inheritance diagram for wtl\+:\+:Source\+Meta\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwtl_1_1_source_meta_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwtl_1_1_source_meta_data_a79f846523696923b9e7d62fab52fb96c}{Source\+Meta\+Data} ()
+\item 
+\hyperlink{classwtl_1_1_source_meta_data_acc7b69f117a62e3379c72584597d2d8d}{Source\+Meta\+Data} (const \hyperlink{classwtl_1_1_source_meta_data}{Source\+Meta\+Data} \&x)=default
+\item 
+int \hyperlink{classwtl_1_1_source_meta_data_a4053efeed2a7777d236640c94a411862}{get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Image Height. \end{DoxyCompactList}\item 
+int \hyperlink{classwtl_1_1_source_meta_data_a42f1f73264921d73e5ba08a589630ea0}{get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Image Width. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a2720b2135f4680d231365a3883053e13}{get\+Resolution} () const
+\begin{DoxyCompactList}\small\item\em Image Resolution. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a447b4425de148173e4e098a612c35b49}{get\+Source\+Name} () const
+\begin{DoxyCompactList}\small\item\em Image Name. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a97c4d177a47b1dc7e761e4eb652ff663}{get\+Source\+Path} () const
+\begin{DoxyCompactList}\small\item\em Image Path. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a08906d8f70a1de5931be41a0e25d8564}{get\+Capture\+Time\+Exif} () const
+\begin{DoxyCompactList}\small\item\em Unix timestamp of an image saved in exif. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classwtl_1_1_source_meta_data_ac0a710c790df3e6c20a2e5e0d09a72be}{get\+Capture\+Time} () const
+\begin{DoxyCompactList}\small\item\em Unix timestamp of an imag. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a2f5e624ff2afb463c7833857674e6c72}{get\+Camera\+Serial\+Number} () const
+\begin{DoxyCompactList}\small\item\em Serial number of camera that captured the image. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_aba6ebedd1aea262d0bd153ed269798c2}{get\+Camera\+Manufacturer} () const
+\begin{DoxyCompactList}\small\item\em Manufacturer of camera that captured the image. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a5f6e561825f34c91e81fbfa3bc036b7d}{get\+Camera\+Artn} () const
+\begin{DoxyCompactList}\small\item\em Article number of camera that captured the image. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a897edcd3c9426dc80d42905636c3d87d}{get\+Camera\+F\+W\+Version} () const
+\begin{DoxyCompactList}\small\item\em Get Camera Firmware Version. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a0743539c60ee8f8e3ece43e9404a05a4}{get\+Camera\+Name} () const
+\begin{DoxyCompactList}\small\item\em Camera model name. \end{DoxyCompactList}\item 
+const \hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info} \& \hyperlink{classwtl_1_1_source_meta_data_a52c2ee24703bedb5655f50652ed0b5e3}{get\+G\+P\+S\+Info} () const
+\begin{DoxyCompactList}\small\item\em Get information about location of an image. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info} \& \hyperlink{classwtl_1_1_source_meta_data_a7b98944eaf50b06c4065ede57e13342e}{get\+G\+P\+S\+Info} ()
+\begin{DoxyCompactList}\small\item\em Get information about location of an image. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classwtl_1_1_source_meta_data_a9bd2c8d10826432cf74f8d1f25c9edaa}{get\+Flight\+Time} () const
+\begin{DoxyCompactList}\small\item\em get\+Flight\+Time \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_source_meta_data_ad00e12cf26115e37d1303cb9b7dc8fd7}{get\+Gimbal\+C\+P\+U\+Temp} () const
+\begin{DoxyCompactList}\small\item\em get\+Gimbal\+C\+P\+U\+Temp \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{classwtl_1_1_source_meta_data_a2e8a400c1afa29b1b910ab7fa4b8ca66}{get\+Image\+Frequency} () const
+\begin{DoxyCompactList}\small\item\em get\+Image\+Frequency \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a8d244e35bcf262d4651aadff0cb467d0}{set\+Source\+Name} (const std\+::string \&image\+Name)
+\begin{DoxyCompactList}\small\item\em Set name of an image. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a5522a30a52467ae0cd124b55b5a78111}{set\+Source\+Path} (const std\+::string \&image\+Path)
+\begin{DoxyCompactList}\small\item\em Set path to the image. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_ad05a54221a2d34c3a4f2af9d6cd92e12}{set\+Width} (int width)
+\begin{DoxyCompactList}\small\item\em set\+Width \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_af2b87e293f1a6ce5a5920752abef850f}{set\+Height} (int height)
+\begin{DoxyCompactList}\small\item\em set\+Height \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_af8903a429b9f6187c3843d4f32e18dce}{set\+Capture\+Time} (unsigned timestamp)
+\begin{DoxyCompactList}\small\item\em set\+Capture\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a53490561664545c7d1b7223a2c6fc9c1}{set\+Camera\+Serial\+Number} (const std\+::string \&serial\+Number)
+\begin{DoxyCompactList}\small\item\em set\+Camera\+Serial\+Number \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a9d14f13a2af810a1b055da76ad0abf3e}{set\+Camera\+Manufacturer} (const std\+::string \&camera\+Manufacturer)
+\begin{DoxyCompactList}\small\item\em set\+Camera\+Manufacturer \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a86eb2818b26e117721323890aaf1a800}{set\+Camera\+Artn} (const std\+::string \&camera\+Model\+Name)
+\begin{DoxyCompactList}\small\item\em set\+Camera\+Model\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a065ad8b3e7cd473f95d7891d28afcb62}{set\+Camera\+Name} (const std\+::string \&camera\+Name)
+\begin{DoxyCompactList}\small\item\em get\+Camera\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_aeb8f04e1d221954919f36178da738862}{set\+Camera\+F\+W\+Version} (const std\+::string \&camera\+FW)
+\begin{DoxyCompactList}\small\item\em Set Camera Firmware Version. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a361f603d20e3084820e3869e19ec8f40}{set\+Image\+Frequency} (uint16\+\_\+t img\+Freq)
+\begin{DoxyCompactList}\small\item\em set\+Image\+Frequency \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a8db9b3b0c1e0507ba75ae2cb6f26cb96}{set\+Flight\+Time} (unsigned flight\+Time)
+\begin{DoxyCompactList}\small\item\em set\+Flight\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_source_meta_data_a46aa7e06e6358d6e1bf5a297ce2c9621}{set\+Gimbal\+C\+P\+U\+Temp} (double temp)
+\begin{DoxyCompactList}\small\item\em set\+Gimbal\+C\+P\+U\+Temp \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_adb976a4739c879d6329023ffff10ec88}{m\+\_\+\+Source\+Name} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_aeddfd5e6b783a06d66b1f19b4d932c03}{m\+\_\+\+Source\+Path} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_afcd3f61eccdae1bdb42cd428bdf3a5ea}{m\+\_\+\+Camera\+Name} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_aa4fb21498fb68acff7be512b2b452eb4}{m\+\_\+\+Camera\+Artn} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a53ecb2596fe7cf3817dbe30c973a27a3}{m\+\_\+\+Camera\+FW} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_ab7de122fe4c98d6e5efc39dba7fd5981}{m\+\_\+\+Camera\+Serial} \{\}
+\item 
+std\+::string \hyperlink{classwtl_1_1_source_meta_data_a3db4cdd635561f6cbc01bcd3a40c1796}{m\+\_\+\+Camera\+Manufacturer} \{\}
+\item 
+unsigned \hyperlink{classwtl_1_1_source_meta_data_aa4b47e89e4b6223a81dc6540390ff691}{m\+\_\+\+Timestamp} \{\}
+\item 
+int \hyperlink{classwtl_1_1_source_meta_data_a0e08fc3eb69bccdbb6f47b627ad937c2}{m\+\_\+\+Image\+Height} \{\}
+\item 
+int \hyperlink{classwtl_1_1_source_meta_data_aabd51142b0510a3a412f40643afc39ac}{m\+\_\+\+Image\+Width} \{\}
+\item 
+\hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info} \hyperlink{classwtl_1_1_source_meta_data_a76b8450fe6b97b6939b2f8394fb9b1d0}{m\+\_\+\+Gps\+Info} \{\}
+\item 
+uint16\+\_\+t \hyperlink{classwtl_1_1_source_meta_data_af294c480a5d3c2424b5441ff66255ac5}{m\+\_\+\+Image\+Freq} \{\}
+\item 
+unsigned \hyperlink{classwtl_1_1_source_meta_data_a361e3e090d8aadb19b5706fc15b3f900}{m\+\_\+\+Flight\+Time} \{\}
+\item 
+double \hyperlink{classwtl_1_1_source_meta_data_a885dfbeb71a5cf9dae0c8286a98ef757}{m\+\_\+\+Gimbal\+C\+P\+U\+Temp} \{\}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwtl_1_1_source_meta_data_a89f52b56f7155da8da3c26ad5feb1bcc}{F\+F\+F\+File\+Manager}
+\item 
+class \hyperlink{classwtl_1_1_source_meta_data_a7d99a404a557c5e4244a8c6ec26e7648}{Thermal\+File\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Image data not related to thermal analysis. 
+
+Class instances are used to provide user with metadata. acquired from thermogram that are not directly related to temperature calculations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a79f846523696923b9e7d62fab52fb96c}\label{classwtl_1_1_source_meta_data_a79f846523696923b9e7d62fab52fb96c}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!Source\+Meta\+Data@{Source\+Meta\+Data}}
+\index{Source\+Meta\+Data@{Source\+Meta\+Data}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{Source\+Meta\+Data()}{SourceMetaData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily wtl\+::\+Source\+Meta\+Data\+::\+Source\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_acc7b69f117a62e3379c72584597d2d8d}\label{classwtl_1_1_source_meta_data_acc7b69f117a62e3379c72584597d2d8d}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!Source\+Meta\+Data@{Source\+Meta\+Data}}
+\index{Source\+Meta\+Data@{Source\+Meta\+Data}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{Source\+Meta\+Data()}{SourceMetaData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wtl\+::\+Source\+Meta\+Data\+::\+Source\+Meta\+Data (\begin{DoxyParamCaption}\item[{const \hyperlink{classwtl_1_1_source_meta_data}{Source\+Meta\+Data} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a5f6e561825f34c91e81fbfa3bc036b7d}\label{classwtl_1_1_source_meta_data_a5f6e561825f34c91e81fbfa3bc036b7d}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Camera\+Artn@{get\+Camera\+Artn}}
+\index{get\+Camera\+Artn@{get\+Camera\+Artn}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Camera\+Artn()}{getCameraArtn()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Camera\+Artn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Article number of camera that captured the image. 
+
+\begin{DoxyReturn}{Returns}
+Camera article number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a897edcd3c9426dc80d42905636c3d87d}\label{classwtl_1_1_source_meta_data_a897edcd3c9426dc80d42905636c3d87d}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Camera\+F\+W\+Version@{get\+Camera\+F\+W\+Version}}
+\index{get\+Camera\+F\+W\+Version@{get\+Camera\+F\+W\+Version}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Camera\+F\+W\+Version()}{getCameraFWVersion()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Camera\+F\+W\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Camera Firmware Version. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aba6ebedd1aea262d0bd153ed269798c2}\label{classwtl_1_1_source_meta_data_aba6ebedd1aea262d0bd153ed269798c2}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Camera\+Manufacturer@{get\+Camera\+Manufacturer}}
+\index{get\+Camera\+Manufacturer@{get\+Camera\+Manufacturer}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Camera\+Manufacturer()}{getCameraManufacturer()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Camera\+Manufacturer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Manufacturer of camera that captured the image. 
+
+\begin{DoxyReturn}{Returns}
+Manufacturer as string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a0743539c60ee8f8e3ece43e9404a05a4}\label{classwtl_1_1_source_meta_data_a0743539c60ee8f8e3ece43e9404a05a4}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Camera\+Name@{get\+Camera\+Name}}
+\index{get\+Camera\+Name@{get\+Camera\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Camera\+Name()}{getCameraName()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Camera\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Camera model name. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a2f5e624ff2afb463c7833857674e6c72}\label{classwtl_1_1_source_meta_data_a2f5e624ff2afb463c7833857674e6c72}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Camera\+Serial\+Number@{get\+Camera\+Serial\+Number}}
+\index{get\+Camera\+Serial\+Number@{get\+Camera\+Serial\+Number}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Camera\+Serial\+Number()}{getCameraSerialNumber()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Camera\+Serial\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Serial number of camera that captured the image. 
+
+\begin{DoxyReturn}{Returns}
+Camera SN string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_ac0a710c790df3e6c20a2e5e0d09a72be}\label{classwtl_1_1_source_meta_data_ac0a710c790df3e6c20a2e5e0d09a72be}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Capture\+Time@{get\+Capture\+Time}}
+\index{get\+Capture\+Time@{get\+Capture\+Time}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Capture\+Time()}{getCaptureTime()}}
+{\footnotesize\ttfamily unsigned wtl\+::\+Source\+Meta\+Data\+::get\+Capture\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unix timestamp of an imag. 
+
+\begin{DoxyReturn}{Returns}
+Unix timestamp as uint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a08906d8f70a1de5931be41a0e25d8564}\label{classwtl_1_1_source_meta_data_a08906d8f70a1de5931be41a0e25d8564}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Capture\+Time\+Exif@{get\+Capture\+Time\+Exif}}
+\index{get\+Capture\+Time\+Exif@{get\+Capture\+Time\+Exif}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Capture\+Time\+Exif()}{getCaptureTimeExif()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Capture\+Time\+Exif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unix timestamp of an image saved in exif. 
+
+\begin{DoxyReturn}{Returns}
+Unix timestamp as string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a9bd2c8d10826432cf74f8d1f25c9edaa}\label{classwtl_1_1_source_meta_data_a9bd2c8d10826432cf74f8d1f25c9edaa}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Flight\+Time@{get\+Flight\+Time}}
+\index{get\+Flight\+Time@{get\+Flight\+Time}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Flight\+Time()}{getFlightTime()}}
+{\footnotesize\ttfamily unsigned wtl\+::\+Source\+Meta\+Data\+::get\+Flight\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Flight\+Time 
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_ad00e12cf26115e37d1303cb9b7dc8fd7}\label{classwtl_1_1_source_meta_data_ad00e12cf26115e37d1303cb9b7dc8fd7}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Gimbal\+C\+P\+U\+Temp@{get\+Gimbal\+C\+P\+U\+Temp}}
+\index{get\+Gimbal\+C\+P\+U\+Temp@{get\+Gimbal\+C\+P\+U\+Temp}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Gimbal\+C\+P\+U\+Temp()}{getGimbalCPUTemp()}}
+{\footnotesize\ttfamily double wtl\+::\+Source\+Meta\+Data\+::get\+Gimbal\+C\+P\+U\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Gimbal\+C\+P\+U\+Temp 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a52c2ee24703bedb5655f50652ed0b5e3}\label{classwtl_1_1_source_meta_data_a52c2ee24703bedb5655f50652ed0b5e3}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+G\+P\+S\+Info@{get\+G\+P\+S\+Info}}
+\index{get\+G\+P\+S\+Info@{get\+G\+P\+S\+Info}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+G\+P\+S\+Info()}{getGPSInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info}\& wtl\+::\+Source\+Meta\+Data\+::get\+G\+P\+S\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get information about location of an image. 
+
+\begin{DoxyReturn}{Returns}
+Read-\/only gps info instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a7b98944eaf50b06c4065ede57e13342e}\label{classwtl_1_1_source_meta_data_a7b98944eaf50b06c4065ede57e13342e}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+G\+P\+S\+Info@{get\+G\+P\+S\+Info}}
+\index{get\+G\+P\+S\+Info@{get\+G\+P\+S\+Info}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+G\+P\+S\+Info()}{getGPSInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info}\& wtl\+::\+Source\+Meta\+Data\+::get\+G\+P\+S\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get information about location of an image. 
+
+\begin{DoxyReturn}{Returns}
+Modyfiable G\+PS info instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a4053efeed2a7777d236640c94a411862}\label{classwtl_1_1_source_meta_data_a4053efeed2a7777d236640c94a411862}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int wtl\+::\+Source\+Meta\+Data\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Image Height. 
+
+\begin{DoxyReturn}{Returns}
+Height in pixels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a2e8a400c1afa29b1b910ab7fa4b8ca66}\label{classwtl_1_1_source_meta_data_a2e8a400c1afa29b1b910ab7fa4b8ca66}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Image\+Frequency@{get\+Image\+Frequency}}
+\index{get\+Image\+Frequency@{get\+Image\+Frequency}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Image\+Frequency()}{getImageFrequency()}}
+{\footnotesize\ttfamily uint16\+\_\+t wtl\+::\+Source\+Meta\+Data\+::get\+Image\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Image\+Frequency 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a2720b2135f4680d231365a3883053e13}\label{classwtl_1_1_source_meta_data_a2720b2135f4680d231365a3883053e13}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Resolution@{get\+Resolution}}
+\index{get\+Resolution@{get\+Resolution}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Resolution()}{getResolution()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Image Resolution. 
+
+\begin{DoxyReturn}{Returns}
+Image Pixel Resolution. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a447b4425de148173e4e098a612c35b49}\label{classwtl_1_1_source_meta_data_a447b4425de148173e4e098a612c35b49}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Source\+Name@{get\+Source\+Name}}
+\index{get\+Source\+Name@{get\+Source\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Source\+Name()}{getSourceName()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Source\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Image Name. 
+
+\begin{DoxyReturn}{Returns}
+Image Name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a97c4d177a47b1dc7e761e4eb652ff663}\label{classwtl_1_1_source_meta_data_a97c4d177a47b1dc7e761e4eb652ff663}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Source\+Path@{get\+Source\+Path}}
+\index{get\+Source\+Path@{get\+Source\+Path}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Source\+Path()}{getSourcePath()}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::get\+Source\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Image Path. 
+
+\begin{DoxyReturn}{Returns}
+Image Path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a42f1f73264921d73e5ba08a589630ea0}\label{classwtl_1_1_source_meta_data_a42f1f73264921d73e5ba08a589630ea0}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int wtl\+::\+Source\+Meta\+Data\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Image Width. 
+
+\begin{DoxyReturn}{Returns}
+Width in pixels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a86eb2818b26e117721323890aaf1a800}\label{classwtl_1_1_source_meta_data_a86eb2818b26e117721323890aaf1a800}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Camera\+Artn@{set\+Camera\+Artn}}
+\index{set\+Camera\+Artn@{set\+Camera\+Artn}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Camera\+Artn()}{setCameraArtn()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Camera\+Artn (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Model\+Name }\end{DoxyParamCaption})}
+
+
+
+set\+Camera\+Model\+Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Model\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aeb8f04e1d221954919f36178da738862}\label{classwtl_1_1_source_meta_data_aeb8f04e1d221954919f36178da738862}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Camera\+F\+W\+Version@{set\+Camera\+F\+W\+Version}}
+\index{set\+Camera\+F\+W\+Version@{set\+Camera\+F\+W\+Version}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Camera\+F\+W\+Version()}{setCameraFWVersion()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Camera\+F\+W\+Version (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+FW }\end{DoxyParamCaption})}
+
+
+
+Set Camera Firmware Version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+FW} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a9d14f13a2af810a1b055da76ad0abf3e}\label{classwtl_1_1_source_meta_data_a9d14f13a2af810a1b055da76ad0abf3e}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Camera\+Manufacturer@{set\+Camera\+Manufacturer}}
+\index{set\+Camera\+Manufacturer@{set\+Camera\+Manufacturer}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Camera\+Manufacturer()}{setCameraManufacturer()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Camera\+Manufacturer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Manufacturer }\end{DoxyParamCaption})}
+
+
+
+set\+Camera\+Manufacturer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Manufacturer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a065ad8b3e7cd473f95d7891d28afcb62}\label{classwtl_1_1_source_meta_data_a065ad8b3e7cd473f95d7891d28afcb62}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Camera\+Name@{set\+Camera\+Name}}
+\index{set\+Camera\+Name@{set\+Camera\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Camera\+Name()}{setCameraName()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Camera\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Name }\end{DoxyParamCaption})}
+
+
+
+get\+Camera\+Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a53490561664545c7d1b7223a2c6fc9c1}\label{classwtl_1_1_source_meta_data_a53490561664545c7d1b7223a2c6fc9c1}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Camera\+Serial\+Number@{set\+Camera\+Serial\+Number}}
+\index{set\+Camera\+Serial\+Number@{set\+Camera\+Serial\+Number}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Camera\+Serial\+Number()}{setCameraSerialNumber()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Camera\+Serial\+Number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{serial\+Number }\end{DoxyParamCaption})}
+
+
+
+set\+Camera\+Serial\+Number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em serial\+Number} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_af8903a429b9f6187c3843d4f32e18dce}\label{classwtl_1_1_source_meta_data_af8903a429b9f6187c3843d4f32e18dce}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Capture\+Time@{set\+Capture\+Time}}
+\index{set\+Capture\+Time@{set\+Capture\+Time}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Capture\+Time()}{setCaptureTime()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Capture\+Time (\begin{DoxyParamCaption}\item[{unsigned}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+set\+Capture\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a8db9b3b0c1e0507ba75ae2cb6f26cb96}\label{classwtl_1_1_source_meta_data_a8db9b3b0c1e0507ba75ae2cb6f26cb96}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Flight\+Time@{set\+Flight\+Time}}
+\index{set\+Flight\+Time@{set\+Flight\+Time}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Flight\+Time()}{setFlightTime()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Flight\+Time (\begin{DoxyParamCaption}\item[{unsigned}]{flight\+Time }\end{DoxyParamCaption})}
+
+
+
+set\+Flight\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a46aa7e06e6358d6e1bf5a297ce2c9621}\label{classwtl_1_1_source_meta_data_a46aa7e06e6358d6e1bf5a297ce2c9621}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Gimbal\+C\+P\+U\+Temp@{set\+Gimbal\+C\+P\+U\+Temp}}
+\index{set\+Gimbal\+C\+P\+U\+Temp@{set\+Gimbal\+C\+P\+U\+Temp}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Gimbal\+C\+P\+U\+Temp()}{setGimbalCPUTemp()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Gimbal\+C\+P\+U\+Temp (\begin{DoxyParamCaption}\item[{double}]{temp }\end{DoxyParamCaption})}
+
+
+
+set\+Gimbal\+C\+P\+U\+Temp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_af2b87e293f1a6ce5a5920752abef850f}\label{classwtl_1_1_source_meta_data_af2b87e293f1a6ce5a5920752abef850f}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+set\+Height 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a361f603d20e3084820e3869e19ec8f40}\label{classwtl_1_1_source_meta_data_a361f603d20e3084820e3869e19ec8f40}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Image\+Frequency@{set\+Image\+Frequency}}
+\index{set\+Image\+Frequency@{set\+Image\+Frequency}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Image\+Frequency()}{setImageFrequency()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Image\+Frequency (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{img\+Freq }\end{DoxyParamCaption})}
+
+
+
+set\+Image\+Frequency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\+Freq} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a8d244e35bcf262d4651aadff0cb467d0}\label{classwtl_1_1_source_meta_data_a8d244e35bcf262d4651aadff0cb467d0}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Source\+Name@{set\+Source\+Name}}
+\index{set\+Source\+Name@{set\+Source\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Source\+Name()}{setSourceName()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Source\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{image\+Name }\end{DoxyParamCaption})}
+
+
+
+Set name of an image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image\+Name} & new image name string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a5522a30a52467ae0cd124b55b5a78111}\label{classwtl_1_1_source_meta_data_a5522a30a52467ae0cd124b55b5a78111}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Source\+Path@{set\+Source\+Path}}
+\index{set\+Source\+Path@{set\+Source\+Path}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Source\+Path()}{setSourcePath()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Source\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{image\+Path }\end{DoxyParamCaption})}
+
+
+
+Set path to the image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image\+Path} & new image path. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_ad05a54221a2d34c3a4f2af9d6cd92e12}\label{classwtl_1_1_source_meta_data_ad05a54221a2d34c3a4f2af9d6cd92e12}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void wtl\+::\+Source\+Meta\+Data\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+set\+Width 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a89f52b56f7155da8da3c26ad5feb1bcc}\label{classwtl_1_1_source_meta_data_a89f52b56f7155da8da3c26ad5feb1bcc}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!F\+F\+F\+File\+Manager@{F\+F\+F\+File\+Manager}}
+\index{F\+F\+F\+File\+Manager@{F\+F\+F\+File\+Manager}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{F\+F\+F\+File\+Manager}{FFFFileManager}}
+{\footnotesize\ttfamily friend class F\+F\+F\+File\+Manager\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a7d99a404a557c5e4244a8c6ec26e7648}\label{classwtl_1_1_source_meta_data_a7d99a404a557c5e4244a8c6ec26e7648}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!Thermal\+File\+Manager@{Thermal\+File\+Manager}}
+\index{Thermal\+File\+Manager@{Thermal\+File\+Manager}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{Thermal\+File\+Manager}{ThermalFileManager}}
+{\footnotesize\ttfamily friend class Thermal\+File\+Manager\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aa4fb21498fb68acff7be512b2b452eb4}\label{classwtl_1_1_source_meta_data_aa4fb21498fb68acff7be512b2b452eb4}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Camera\+Artn@{m\+\_\+\+Camera\+Artn}}
+\index{m\+\_\+\+Camera\+Artn@{m\+\_\+\+Camera\+Artn}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Artn}{m\_CameraArtn}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Camera\+Artn \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a53ecb2596fe7cf3817dbe30c973a27a3}\label{classwtl_1_1_source_meta_data_a53ecb2596fe7cf3817dbe30c973a27a3}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Camera\+FW@{m\+\_\+\+Camera\+FW}}
+\index{m\+\_\+\+Camera\+FW@{m\+\_\+\+Camera\+FW}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+FW}{m\_CameraFW}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Camera\+FW \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a3db4cdd635561f6cbc01bcd3a40c1796}\label{classwtl_1_1_source_meta_data_a3db4cdd635561f6cbc01bcd3a40c1796}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Camera\+Manufacturer@{m\+\_\+\+Camera\+Manufacturer}}
+\index{m\+\_\+\+Camera\+Manufacturer@{m\+\_\+\+Camera\+Manufacturer}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Manufacturer}{m\_CameraManufacturer}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Camera\+Manufacturer \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_afcd3f61eccdae1bdb42cd428bdf3a5ea}\label{classwtl_1_1_source_meta_data_afcd3f61eccdae1bdb42cd428bdf3a5ea}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Camera\+Name@{m\+\_\+\+Camera\+Name}}
+\index{m\+\_\+\+Camera\+Name@{m\+\_\+\+Camera\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Name}{m\_CameraName}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Camera\+Name \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_ab7de122fe4c98d6e5efc39dba7fd5981}\label{classwtl_1_1_source_meta_data_ab7de122fe4c98d6e5efc39dba7fd5981}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Camera\+Serial@{m\+\_\+\+Camera\+Serial}}
+\index{m\+\_\+\+Camera\+Serial@{m\+\_\+\+Camera\+Serial}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Serial}{m\_CameraSerial}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Camera\+Serial \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a361e3e090d8aadb19b5706fc15b3f900}\label{classwtl_1_1_source_meta_data_a361e3e090d8aadb19b5706fc15b3f900}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Flight\+Time@{m\+\_\+\+Flight\+Time}}
+\index{m\+\_\+\+Flight\+Time@{m\+\_\+\+Flight\+Time}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Flight\+Time}{m\_FlightTime}}
+{\footnotesize\ttfamily unsigned wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Flight\+Time \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a885dfbeb71a5cf9dae0c8286a98ef757}\label{classwtl_1_1_source_meta_data_a885dfbeb71a5cf9dae0c8286a98ef757}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Gimbal\+C\+P\+U\+Temp@{m\+\_\+\+Gimbal\+C\+P\+U\+Temp}}
+\index{m\+\_\+\+Gimbal\+C\+P\+U\+Temp@{m\+\_\+\+Gimbal\+C\+P\+U\+Temp}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Gimbal\+C\+P\+U\+Temp}{m\_GimbalCPUTemp}}
+{\footnotesize\ttfamily double wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Gimbal\+C\+P\+U\+Temp \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a76b8450fe6b97b6939b2f8394fb9b1d0}\label{classwtl_1_1_source_meta_data_a76b8450fe6b97b6939b2f8394fb9b1d0}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Gps\+Info@{m\+\_\+\+Gps\+Info}}
+\index{m\+\_\+\+Gps\+Info@{m\+\_\+\+Gps\+Info}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Gps\+Info}{m\_GpsInfo}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_g_p_s_info}{G\+P\+S\+Info} wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Gps\+Info \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_af294c480a5d3c2424b5441ff66255ac5}\label{classwtl_1_1_source_meta_data_af294c480a5d3c2424b5441ff66255ac5}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Image\+Freq@{m\+\_\+\+Image\+Freq}}
+\index{m\+\_\+\+Image\+Freq@{m\+\_\+\+Image\+Freq}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Image\+Freq}{m\_ImageFreq}}
+{\footnotesize\ttfamily uint16\+\_\+t wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Image\+Freq \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_a0e08fc3eb69bccdbb6f47b627ad937c2}\label{classwtl_1_1_source_meta_data_a0e08fc3eb69bccdbb6f47b627ad937c2}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Image\+Height@{m\+\_\+\+Image\+Height}}
+\index{m\+\_\+\+Image\+Height@{m\+\_\+\+Image\+Height}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Image\+Height}{m\_ImageHeight}}
+{\footnotesize\ttfamily int wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Image\+Height \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aabd51142b0510a3a412f40643afc39ac}\label{classwtl_1_1_source_meta_data_aabd51142b0510a3a412f40643afc39ac}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Image\+Width@{m\+\_\+\+Image\+Width}}
+\index{m\+\_\+\+Image\+Width@{m\+\_\+\+Image\+Width}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Image\+Width}{m\_ImageWidth}}
+{\footnotesize\ttfamily int wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Image\+Width \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_adb976a4739c879d6329023ffff10ec88}\label{classwtl_1_1_source_meta_data_adb976a4739c879d6329023ffff10ec88}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Source\+Name@{m\+\_\+\+Source\+Name}}
+\index{m\+\_\+\+Source\+Name@{m\+\_\+\+Source\+Name}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Source\+Name}{m\_SourceName}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Source\+Name \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aeddfd5e6b783a06d66b1f19b4d932c03}\label{classwtl_1_1_source_meta_data_aeddfd5e6b783a06d66b1f19b4d932c03}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Source\+Path@{m\+\_\+\+Source\+Path}}
+\index{m\+\_\+\+Source\+Path@{m\+\_\+\+Source\+Path}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Source\+Path}{m\_SourcePath}}
+{\footnotesize\ttfamily std\+::string wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Source\+Path \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classwtl_1_1_source_meta_data_aa4b47e89e4b6223a81dc6540390ff691}\label{classwtl_1_1_source_meta_data_aa4b47e89e4b6223a81dc6540390ff691}} 
+\index{wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}!m\+\_\+\+Timestamp@{m\+\_\+\+Timestamp}}
+\index{m\+\_\+\+Timestamp@{m\+\_\+\+Timestamp}!wtl\+::\+Source\+Meta\+Data@{wtl\+::\+Source\+Meta\+Data}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Timestamp}{m\_Timestamp}}
+{\footnotesize\ttfamily unsigned wtl\+::\+Source\+Meta\+Data\+::m\+\_\+\+Timestamp \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+

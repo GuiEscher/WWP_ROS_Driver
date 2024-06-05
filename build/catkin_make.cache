@@ -1,0 +1,2 @@
+wwpcamera
+-DCATKIN_DEVEL_PREFIX=/home/guilherme/wwpcamera/devel -DCMAKE_INSTALL_PREFIX=/home/guilherme/wwpcamera/install -G Unix Makefiles

@@ -1,0 +1,600 @@
+\hypertarget{classwtl_1_1_sequence_radiometric}{}\section{wtl\+:\+:Sequence\+Radiometric Class Reference}
+\label{classwtl_1_1_sequence_radiometric}\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+
+
+Represents a radiometric sequence.  
+
+
+Inheritance diagram for wtl\+:\+:Sequence\+Radiometric\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwtl_1_1_sequence_radiometric}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwtl_1_1_sequence_radiometric_a2cc32b5a5bad40a78f78aa1388b98fff}{Sequence\+Radiometric} (const \hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric} \&x)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_sequence_radiometric_a0512cf0918f1fcc9ce2d6d23bb3db3ef}{$\sim$\+Sequence\+Radiometric} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric} \& \hyperlink{classwtl_1_1_sequence_radiometric_ae322c5199985048182697285611c0958}{operator=} (const \hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric} \&x)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_a89c1f04092c4b14814693c95b753bbc3}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Subscription operator. \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_afb8a7fd35e6c4b10406953a12c4564fe}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const
+\begin{DoxyCompactList}\small\item\em Constant Subscription operator. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_acff97bda5576bfb082cc5708c9a35200}{at} (int index)
+\begin{DoxyCompactList}\small\item\em Returns radiometric image representation of frame at given position.\+Only for sequences with temperature data. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_thermal_image}{wtl\+::\+Thermal\+Image} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_ae7b8f68b95bdda29cd202570c4fb9fbd}{thermal\+At} (int index) const override
+\begin{DoxyCompactList}\small\item\em Returns thermal image representation of frame at given position.\+Only for sequences with temperature data. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_a3b465540b5cbc1a7f0dfd1f6d91aa7d1}{radiometric\+At} (int index) const
+\begin{DoxyCompactList}\small\item\em Returns thermal image representation of frame at given position.\+Only for sequences with temperature data. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ uint8\+\_\+t $>$ \hyperlink{classwtl_1_1_sequence_radiometric_af0503fb4a89d9a356a4a68bad6da976d}{get\+R\+G\+B\+Frame\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Get rgb representation of an frame. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ uint8\+\_\+t $>$ \hyperlink{classwtl_1_1_sequence_radiometric_a04ca24ba12175157835a6f2cb8495971}{get\+R\+G\+B\+Frame\+With\+Overlay\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Get rgb representation of an frame \hyperlink{classwtl_1_1_alarms}{Alarms} and measurements overlay is added to the image. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_measurements}{Measurements} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_a4084caa5e30330375300173b4b0582d0}{get\+Measurements} ()
+\begin{DoxyCompactList}\small\item\em Get \hyperlink{classwtl_1_1_measurements}{Measurements}. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_alarms}{Alarms} $>$ \hyperlink{classwtl_1_1_sequence_radiometric_a11b13d272a8674a3cdccfeb2ed3400fe}{get\+Alarms} ()
+\begin{DoxyCompactList}\small\item\em Get \hyperlink{classwtl_1_1_alarms}{Alarms}. \end{DoxyCompactList}\item 
+float \hyperlink{classwtl_1_1_sequence_radiometric_a3e944251c9a88be6f5b8cf5f41ffd462}{get\+Palette\+Max\+Temperature} () const
+\begin{DoxyCompactList}\small\item\em get\+Palette\+Max\+Temperature \end{DoxyCompactList}\item 
+float \hyperlink{classwtl_1_1_sequence_radiometric_a18e8bdc19c4d9e8794653da24db46b70}{get\+Palette\+Min\+Temperature} () const
+\begin{DoxyCompactList}\small\item\em get\+Palette\+Min\+Temperature \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a7d1489f923aeffa694826ea063724251}{set\+Manual\+Max} (float value)
+\begin{DoxyCompactList}\small\item\em Set temperature used as maximum for palette. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_ad5fc50b7c210bc5d2a914ba1c0b47a3c}{set\+Manual\+Min} (float value)
+\begin{DoxyCompactList}\small\item\em Set temperature used as minimium for palette. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a3faab55fbc056ae2a50f690d78588095}{set\+Emissivity} (double value)
+\begin{DoxyCompactList}\small\item\em Set emissivity of objects on an scene. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_aead15ea790587175b1db26a0859cc51d}{set\+Reflected\+Temp} (double value)
+\begin{DoxyCompactList}\small\item\em Set Reflected Temperature of objects on an scene. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_ac98bfc0193618acc5d62518fb058736b}{set\+Atm\+Temp} (double value)
+\begin{DoxyCompactList}\small\item\em Set Atmospheric Temperature. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_ae34dbec81e6a10de1456e3b4688cfe3c}{set\+Extern\+Optic\+Temp} (double value)
+\begin{DoxyCompactList}\small\item\em Set External Optics Temperature. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a4b9f85995050a4a683fdd0eed97bbee4}{set\+Object\+Distance} (double value)
+\begin{DoxyCompactList}\small\item\em Set distance to objects in scene. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a4d8e72885a532ca7f69a08f81f6595cd}{set\+Extern\+Optic\+Trans} (double value)
+\begin{DoxyCompactList}\small\item\em Set External Optics Transition. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a87da464d019d313a67609a7c99ea8e4e}{set\+Humidity} (double value)
+\begin{DoxyCompactList}\small\item\em Set humidity. \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_ad063c67b479c8fb33a77205ecfbd48d7}{get\+Emissivity} ()
+\begin{DoxyCompactList}\small\item\em get\+Emissivity \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_a1ea0a824608afd40f7dfda8c8539a269}{get\+Reflected\+Temp} ()
+\begin{DoxyCompactList}\small\item\em get\+Reflected\+Temp \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_adb55fc5e945d0a7972b0b2ffda3e8c36}{get\+Atm\+Temp} ()
+\begin{DoxyCompactList}\small\item\em get\+Atm\+Temp \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_a98d3f1c3318a7e5ffb9812b693bb49d0}{get\+Extern\+Optic\+Temp} ()
+\begin{DoxyCompactList}\small\item\em get\+Extern\+Optic\+Temp \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_a65570c0765b96e161b260d1582379e0a}{get\+Object\+Distance} ()
+\begin{DoxyCompactList}\small\item\em get\+Object\+Distance \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_ad07e40b2ad7f0dcb1b0db5de47bfebb0}{get\+Extern\+Optic\+Trans} ()
+\begin{DoxyCompactList}\small\item\em get\+Extern\+Optic\+Trans \end{DoxyCompactList}\item 
+double \hyperlink{classwtl_1_1_sequence_radiometric_a5c45c9e5200e04e67fa65cb56f1f17dc}{get\+Humidity} ()
+\begin{DoxyCompactList}\small\item\em get\+Humidity \end{DoxyCompactList}\item 
+bool \hyperlink{classwtl_1_1_sequence_radiometric_aa0b063cfe218f95cd57412344d4f9a04}{is\+Radiometric\+Sequence} () const
+\begin{DoxyCompactList}\small\item\em Decide whether thermal sequence instance contains radiometric temperature data. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a3cca0f0bbabe787926910bcedd9307ea}{add\+Roi\+To\+Sequence} (std\+::shared\+\_\+ptr$<$ \hyperlink{structwtl_1_1_roi_struct}{Roi\+Struct} $>$ roi)
+\begin{DoxyCompactList}\small\item\em Add R\+OI item to sequence. \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_ab42fcdd2531eb26af5f4801e1c8f171b}{update\+Custom\+Params\+Roi} (\hyperlink{structwtl_1_1_roi_struct}{Roi\+Struct} \&roi, bool custom\+Params, float emissivity, float refl\+Temp, float distance)
+\begin{DoxyCompactList}\small\item\em update\+Custom\+Params\+Roi \end{DoxyCompactList}\item 
+void \hyperlink{classwtl_1_1_sequence_radiometric_a3117b737de49b7f1b0963a233fc6e463}{add\+Alarm\+To\+Sequence} (std\+::shared\+\_\+ptr$<$ \hyperlink{structwtl_1_1_alarm_struct}{Alarm\+Struct} $>$ alarm)
+\begin{DoxyCompactList}\small\item\em Add Alarm item to sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwtl_1_1_sequence_radiometric_a5baf0a1f190dbaabf7033b4ba92f4c81}{Center}
+\item 
+class \hyperlink{classwtl_1_1_sequence_radiometric_a89f52b56f7155da8da3c26ad5feb1bcc}{F\+F\+F\+File\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents a radiometric sequence. 
+
+Provides interface for extracting and saving data to sequences of thermal images. Sequence is processed as a stream of thermal images. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a2cc32b5a5bad40a78f78aa1388b98fff}\label{classwtl_1_1_sequence_radiometric_a2cc32b5a5bad40a78f78aa1388b98fff}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!Sequence\+Radiometric@{Sequence\+Radiometric}}
+\index{Sequence\+Radiometric@{Sequence\+Radiometric}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{Sequence\+Radiometric()}{SequenceRadiometric()}}
+{\footnotesize\ttfamily wtl\+::\+Sequence\+Radiometric\+::\+Sequence\+Radiometric (\begin{DoxyParamCaption}\item[{const \hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Source thermal sequence. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a0512cf0918f1fcc9ce2d6d23bb3db3ef}\label{classwtl_1_1_sequence_radiometric_a0512cf0918f1fcc9ce2d6d23bb3db3ef}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!````~Sequence\+Radiometric@{$\sim$\+Sequence\+Radiometric}}
+\index{````~Sequence\+Radiometric@{$\sim$\+Sequence\+Radiometric}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{$\sim$\+Sequence\+Radiometric()}{~SequenceRadiometric()}}
+{\footnotesize\ttfamily wtl\+::\+Sequence\+Radiometric\+::$\sim$\+Sequence\+Radiometric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Class destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a3117b737de49b7f1b0963a233fc6e463}\label{classwtl_1_1_sequence_radiometric_a3117b737de49b7f1b0963a233fc6e463}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!add\+Alarm\+To\+Sequence@{add\+Alarm\+To\+Sequence}}
+\index{add\+Alarm\+To\+Sequence@{add\+Alarm\+To\+Sequence}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{add\+Alarm\+To\+Sequence()}{addAlarmToSequence()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::add\+Alarm\+To\+Sequence (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structwtl_1_1_alarm_struct}{Alarm\+Struct} $>$}]{alarm }\end{DoxyParamCaption})}
+
+
+
+Add Alarm item to sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alarm} & Alarm item. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a3cca0f0bbabe787926910bcedd9307ea}\label{classwtl_1_1_sequence_radiometric_a3cca0f0bbabe787926910bcedd9307ea}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!add\+Roi\+To\+Sequence@{add\+Roi\+To\+Sequence}}
+\index{add\+Roi\+To\+Sequence@{add\+Roi\+To\+Sequence}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{add\+Roi\+To\+Sequence()}{addRoiToSequence()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::add\+Roi\+To\+Sequence (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structwtl_1_1_roi_struct}{Roi\+Struct} $>$}]{roi }\end{DoxyParamCaption})}
+
+
+
+Add R\+OI item to sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roi} & R\+OI item. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_acff97bda5576bfb082cc5708c9a35200}\label{classwtl_1_1_sequence_radiometric_acff97bda5576bfb082cc5708c9a35200}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!at@{at}}
+\index{at@{at}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ wtl\+::\+Sequence\+Radiometric\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Returns radiometric image representation of frame at given position.\+Only for sequences with temperature data. 
+
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a11b13d272a8674a3cdccfeb2ed3400fe}\label{classwtl_1_1_sequence_radiometric_a11b13d272a8674a3cdccfeb2ed3400fe}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Alarms@{get\+Alarms}}
+\index{get\+Alarms@{get\+Alarms}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Alarms()}{getAlarms()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_alarms}{wtl\+::\+Alarms} $>$ wtl\+::\+Sequence\+Radiometric\+::get\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get \hyperlink{classwtl_1_1_alarms}{Alarms}. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to all the alarms present in a source 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_adb55fc5e945d0a7972b0b2ffda3e8c36}\label{classwtl_1_1_sequence_radiometric_adb55fc5e945d0a7972b0b2ffda3e8c36}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Atm\+Temp@{get\+Atm\+Temp}}
+\index{get\+Atm\+Temp@{get\+Atm\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Atm\+Temp()}{getAtmTemp()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Atm\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Atm\+Temp 
+
+\begin{DoxyReturn}{Returns}
+Atmospheric temperature 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ad063c67b479c8fb33a77205ecfbd48d7}\label{classwtl_1_1_sequence_radiometric_ad063c67b479c8fb33a77205ecfbd48d7}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Emissivity@{get\+Emissivity}}
+\index{get\+Emissivity@{get\+Emissivity}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Emissivity()}{getEmissivity()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Emissivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Emissivity 
+
+\begin{DoxyReturn}{Returns}
+Sequence emissivity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a98d3f1c3318a7e5ffb9812b693bb49d0}\label{classwtl_1_1_sequence_radiometric_a98d3f1c3318a7e5ffb9812b693bb49d0}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Extern\+Optic\+Temp@{get\+Extern\+Optic\+Temp}}
+\index{get\+Extern\+Optic\+Temp@{get\+Extern\+Optic\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Extern\+Optic\+Temp()}{getExternOpticTemp()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Extern\+Optic\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Extern\+Optic\+Temp 
+
+\begin{DoxyReturn}{Returns}
+External Optics Temperature 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ad07e40b2ad7f0dcb1b0db5de47bfebb0}\label{classwtl_1_1_sequence_radiometric_ad07e40b2ad7f0dcb1b0db5de47bfebb0}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Extern\+Optic\+Trans@{get\+Extern\+Optic\+Trans}}
+\index{get\+Extern\+Optic\+Trans@{get\+Extern\+Optic\+Trans}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Extern\+Optic\+Trans()}{getExternOpticTrans()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Extern\+Optic\+Trans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Extern\+Optic\+Trans 
+
+\begin{DoxyReturn}{Returns}
+External optics transmission 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a5c45c9e5200e04e67fa65cb56f1f17dc}\label{classwtl_1_1_sequence_radiometric_a5c45c9e5200e04e67fa65cb56f1f17dc}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Humidity@{get\+Humidity}}
+\index{get\+Humidity@{get\+Humidity}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Humidity()}{getHumidity()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Humidity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Humidity 
+
+\begin{DoxyReturn}{Returns}
+Relative humidity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a4084caa5e30330375300173b4b0582d0}\label{classwtl_1_1_sequence_radiometric_a4084caa5e30330375300173b4b0582d0}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Measurements@{get\+Measurements}}
+\index{get\+Measurements@{get\+Measurements}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Measurements()}{getMeasurements()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_measurements}{wtl\+::\+Measurements} $>$ wtl\+::\+Sequence\+Radiometric\+::get\+Measurements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get \hyperlink{classwtl_1_1_measurements}{Measurements}. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to all the measurements present in a source 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a65570c0765b96e161b260d1582379e0a}\label{classwtl_1_1_sequence_radiometric_a65570c0765b96e161b260d1582379e0a}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Object\+Distance@{get\+Object\+Distance}}
+\index{get\+Object\+Distance@{get\+Object\+Distance}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Object\+Distance()}{getObjectDistance()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Object\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Object\+Distance 
+
+\begin{DoxyReturn}{Returns}
+Distance of an captured object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a3e944251c9a88be6f5b8cf5f41ffd462}\label{classwtl_1_1_sequence_radiometric_a3e944251c9a88be6f5b8cf5f41ffd462}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Palette\+Max\+Temperature@{get\+Palette\+Max\+Temperature}}
+\index{get\+Palette\+Max\+Temperature@{get\+Palette\+Max\+Temperature}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Palette\+Max\+Temperature()}{getPaletteMaxTemperature()}}
+{\footnotesize\ttfamily float wtl\+::\+Sequence\+Radiometric\+::get\+Palette\+Max\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Palette\+Max\+Temperature 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a18e8bdc19c4d9e8794653da24db46b70}\label{classwtl_1_1_sequence_radiometric_a18e8bdc19c4d9e8794653da24db46b70}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Palette\+Min\+Temperature@{get\+Palette\+Min\+Temperature}}
+\index{get\+Palette\+Min\+Temperature@{get\+Palette\+Min\+Temperature}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Palette\+Min\+Temperature()}{getPaletteMinTemperature()}}
+{\footnotesize\ttfamily float wtl\+::\+Sequence\+Radiometric\+::get\+Palette\+Min\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Palette\+Min\+Temperature 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a1ea0a824608afd40f7dfda8c8539a269}\label{classwtl_1_1_sequence_radiometric_a1ea0a824608afd40f7dfda8c8539a269}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+Reflected\+Temp@{get\+Reflected\+Temp}}
+\index{get\+Reflected\+Temp@{get\+Reflected\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+Reflected\+Temp()}{getReflectedTemp()}}
+{\footnotesize\ttfamily double wtl\+::\+Sequence\+Radiometric\+::get\+Reflected\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Reflected\+Temp 
+
+\begin{DoxyReturn}{Returns}
+Reflected Temperature 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_af0503fb4a89d9a356a4a68bad6da976d}\label{classwtl_1_1_sequence_radiometric_af0503fb4a89d9a356a4a68bad6da976d}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+R\+G\+B\+Frame\+At@{get\+R\+G\+B\+Frame\+At}}
+\index{get\+R\+G\+B\+Frame\+At@{get\+R\+G\+B\+Frame\+At}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+R\+G\+B\+Frame\+At()}{getRGBFrameAt()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ uint8\+\_\+t $>$ wtl\+::\+Sequence\+Radiometric\+::get\+R\+G\+B\+Frame\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get rgb representation of an frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Frame number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1D array of rgb image data, 8 bits per chanel 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classwtl_1_1_thermal_sequence_a0d13f29f0f89343516031c5146b62792}{wtl\+::\+Thermal\+Sequence}.
+
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a04ca24ba12175157835a6f2cb8495971}\label{classwtl_1_1_sequence_radiometric_a04ca24ba12175157835a6f2cb8495971}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!get\+R\+G\+B\+Frame\+With\+Overlay\+At@{get\+R\+G\+B\+Frame\+With\+Overlay\+At}}
+\index{get\+R\+G\+B\+Frame\+With\+Overlay\+At@{get\+R\+G\+B\+Frame\+With\+Overlay\+At}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{get\+R\+G\+B\+Frame\+With\+Overlay\+At()}{getRGBFrameWithOverlayAt()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ uint8\+\_\+t $>$ wtl\+::\+Sequence\+Radiometric\+::get\+R\+G\+B\+Frame\+With\+Overlay\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Get rgb representation of an frame \hyperlink{classwtl_1_1_alarms}{Alarms} and measurements overlay is added to the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Frame number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1D array of rgb image data, 8 bits per chanel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_aa0b063cfe218f95cd57412344d4f9a04}\label{classwtl_1_1_sequence_radiometric_aa0b063cfe218f95cd57412344d4f9a04}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!is\+Radiometric\+Sequence@{is\+Radiometric\+Sequence}}
+\index{is\+Radiometric\+Sequence@{is\+Radiometric\+Sequence}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{is\+Radiometric\+Sequence()}{isRadiometricSequence()}}
+{\footnotesize\ttfamily bool wtl\+::\+Sequence\+Radiometric\+::is\+Radiometric\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Decide whether thermal sequence instance contains radiometric temperature data. 
+
+\begin{DoxyReturn}{Returns}
+True if image contains temperature for every pixel 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classwtl_1_1_thermal_sequence_a572ec84280f0edc98c5ad0c0a0593335}{wtl\+::\+Thermal\+Sequence}.
+
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ae322c5199985048182697285611c0958}\label{classwtl_1_1_sequence_radiometric_ae322c5199985048182697285611c0958}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!operator=@{operator=}}
+\index{operator=@{operator=}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric}\& wtl\+::\+Sequence\+Radiometric\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classwtl_1_1_sequence_radiometric}{Sequence\+Radiometric} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Source thermal sequence. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a89c1f04092c4b14814693c95b753bbc3}\label{classwtl_1_1_sequence_radiometric_a89c1f04092c4b14814693c95b753bbc3}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ wtl\+::\+Sequence\+Radiometric\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Subscription operator. 
+
+Enables random access to sequence frames as radiometric images.\+Only for sequences with temperature data. \mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_afb8a7fd35e6c4b10406953a12c4564fe}\label{classwtl_1_1_sequence_radiometric_afb8a7fd35e6c4b10406953a12c4564fe}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ wtl\+::\+Sequence\+Radiometric\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Constant Subscription operator. 
+
+Enables random access to sequence frames as radiometric images. Only for sequences with temperature data. \mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a3b465540b5cbc1a7f0dfd1f6d91aa7d1}\label{classwtl_1_1_sequence_radiometric_a3b465540b5cbc1a7f0dfd1f6d91aa7d1}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!radiometric\+At@{radiometric\+At}}
+\index{radiometric\+At@{radiometric\+At}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{radiometric\+At()}{radiometricAt()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_image_radiometric}{wtl\+::\+Image\+Radiometric} $>$ wtl\+::\+Sequence\+Radiometric\+::radiometric\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Returns thermal image representation of frame at given position.\+Only for sequences with temperature data. 
+
+Copies thermal data from sequence to this frame which includes recalculation \mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ac98bfc0193618acc5d62518fb058736b}\label{classwtl_1_1_sequence_radiometric_ac98bfc0193618acc5d62518fb058736b}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Atm\+Temp@{set\+Atm\+Temp}}
+\index{set\+Atm\+Temp@{set\+Atm\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Atm\+Temp()}{setAtmTemp()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Atm\+Temp (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set Atmospheric Temperature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New Atmospheric temperature value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a3faab55fbc056ae2a50f690d78588095}\label{classwtl_1_1_sequence_radiometric_a3faab55fbc056ae2a50f690d78588095}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Emissivity@{set\+Emissivity}}
+\index{set\+Emissivity@{set\+Emissivity}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Emissivity()}{setEmissivity()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Emissivity (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set emissivity of objects on an scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New emissivity value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ae34dbec81e6a10de1456e3b4688cfe3c}\label{classwtl_1_1_sequence_radiometric_ae34dbec81e6a10de1456e3b4688cfe3c}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Extern\+Optic\+Temp@{set\+Extern\+Optic\+Temp}}
+\index{set\+Extern\+Optic\+Temp@{set\+Extern\+Optic\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Extern\+Optic\+Temp()}{setExternOpticTemp()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Extern\+Optic\+Temp (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set External Optics Temperature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a4d8e72885a532ca7f69a08f81f6595cd}\label{classwtl_1_1_sequence_radiometric_a4d8e72885a532ca7f69a08f81f6595cd}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Extern\+Optic\+Trans@{set\+Extern\+Optic\+Trans}}
+\index{set\+Extern\+Optic\+Trans@{set\+Extern\+Optic\+Trans}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Extern\+Optic\+Trans()}{setExternOpticTrans()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Extern\+Optic\+Trans (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set External Optics Transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a87da464d019d313a67609a7c99ea8e4e}\label{classwtl_1_1_sequence_radiometric_a87da464d019d313a67609a7c99ea8e4e}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Humidity@{set\+Humidity}}
+\index{set\+Humidity@{set\+Humidity}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Humidity()}{setHumidity()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Humidity (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set humidity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a7d1489f923aeffa694826ea063724251}\label{classwtl_1_1_sequence_radiometric_a7d1489f923aeffa694826ea063724251}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Manual\+Max@{set\+Manual\+Max}}
+\index{set\+Manual\+Max@{set\+Manual\+Max}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Manual\+Max()}{setManualMax()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Manual\+Max (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Set temperature used as maximum for palette. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Temperature in celsius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ad5fc50b7c210bc5d2a914ba1c0b47a3c}\label{classwtl_1_1_sequence_radiometric_ad5fc50b7c210bc5d2a914ba1c0b47a3c}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Manual\+Min@{set\+Manual\+Min}}
+\index{set\+Manual\+Min@{set\+Manual\+Min}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Manual\+Min()}{setManualMin()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Manual\+Min (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Set temperature used as minimium for palette. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Temperature in celsius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a4b9f85995050a4a683fdd0eed97bbee4}\label{classwtl_1_1_sequence_radiometric_a4b9f85995050a4a683fdd0eed97bbee4}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Object\+Distance@{set\+Object\+Distance}}
+\index{set\+Object\+Distance@{set\+Object\+Distance}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Object\+Distance()}{setObjectDistance()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Object\+Distance (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set distance to objects in scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_aead15ea790587175b1db26a0859cc51d}\label{classwtl_1_1_sequence_radiometric_aead15ea790587175b1db26a0859cc51d}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!set\+Reflected\+Temp@{set\+Reflected\+Temp}}
+\index{set\+Reflected\+Temp@{set\+Reflected\+Temp}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{set\+Reflected\+Temp()}{setReflectedTemp()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::set\+Reflected\+Temp (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set Reflected Temperature of objects on an scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New Reflected\+Temp value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ae7b8f68b95bdda29cd202570c4fb9fbd}\label{classwtl_1_1_sequence_radiometric_ae7b8f68b95bdda29cd202570c4fb9fbd}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!thermal\+At@{thermal\+At}}
+\index{thermal\+At@{thermal\+At}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{thermal\+At()}{thermalAt()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classwtl_1_1_thermal_image}{wtl\+::\+Thermal\+Image} $>$ wtl\+::\+Sequence\+Radiometric\+::thermal\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns thermal image representation of frame at given position.\+Only for sequences with temperature data. 
+
+
+
+Implements \hyperlink{classwtl_1_1_thermal_sequence_afa7db744c4112df11b20026eae1da399}{wtl\+::\+Thermal\+Sequence}.
+
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_ab42fcdd2531eb26af5f4801e1c8f171b}\label{classwtl_1_1_sequence_radiometric_ab42fcdd2531eb26af5f4801e1c8f171b}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!update\+Custom\+Params\+Roi@{update\+Custom\+Params\+Roi}}
+\index{update\+Custom\+Params\+Roi@{update\+Custom\+Params\+Roi}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{update\+Custom\+Params\+Roi()}{updateCustomParamsRoi()}}
+{\footnotesize\ttfamily void wtl\+::\+Sequence\+Radiometric\+::update\+Custom\+Params\+Roi (\begin{DoxyParamCaption}\item[{\hyperlink{structwtl_1_1_roi_struct}{Roi\+Struct} \&}]{roi,  }\item[{bool}]{custom\+Params,  }\item[{float}]{emissivity,  }\item[{float}]{refl\+Temp,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+update\+Custom\+Params\+Roi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roi} & \\
+\hline
+{\em custom\+Params} & \\
+\hline
+{\em emissivity} & \\
+\hline
+{\em refl\+Temp} & \\
+\hline
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a5baf0a1f190dbaabf7033b4ba92f4c81}\label{classwtl_1_1_sequence_radiometric_a5baf0a1f190dbaabf7033b4ba92f4c81}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!Center@{Center}}
+\index{Center@{Center}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{Center}{Center}}
+{\footnotesize\ttfamily friend class \hyperlink{classwtl_1_1_center}{Center}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classwtl_1_1_sequence_radiometric_a89f52b56f7155da8da3c26ad5feb1bcc}\label{classwtl_1_1_sequence_radiometric_a89f52b56f7155da8da3c26ad5feb1bcc}} 
+\index{wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}!F\+F\+F\+File\+Manager@{F\+F\+F\+File\+Manager}}
+\index{F\+F\+F\+File\+Manager@{F\+F\+F\+File\+Manager}!wtl\+::\+Sequence\+Radiometric@{wtl\+::\+Sequence\+Radiometric}}
+\subsubsection{\texorpdfstring{F\+F\+F\+File\+Manager}{FFFFileManager}}
+{\footnotesize\ttfamily friend class F\+F\+F\+File\+Manager\hspace{0.3cm}{\ttfamily [friend]}}
+
