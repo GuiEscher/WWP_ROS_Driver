@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: wwpcamera
+Description: Description of wwpcamera
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

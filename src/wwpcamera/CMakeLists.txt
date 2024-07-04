@@ -1,33 +1,46 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(wwpcamera)
 
-add_compile_options(-std=c++11)
+## Adicione esta linha para usar o padrão C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Definir o compilador GCC 11
+set(CMAKE_C_COMPILER /usr/bin/gcc-11)
+set(CMAKE_CXX_COMPILER /usr/bin/g++-11)
+
+# Encontrar pacotes necessários
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  sensor_msgs
+  rospy
   std_msgs
 )
 
+find_package(Threads REQUIRED)
+
+# Definir o pacote catkin
 catkin_package()
 
-# Inclua os diretórios de cabeçalho do projeto e do SDK
+# Incluir diretórios
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
-  /home/guilherme/wwpcamera/src/wwpcamera/src/lib/wwp-data-sdk-0.3.0-linux/wwp-data-sdk/headers
+  /home/guilherme/wwpcamera/lib/WTLIB-0.3.3-Linux/include
 )
 
-# Adicione o diretório onde a biblioteca está localizada
-link_directories(
-  /home/guilherme/wwpcamera/src/wwpcamera/src/lib/wwp-data-sdk-0.3.0-linux/wwp-data-sdk/lib-linux
-)
+# Adicionar diretório de linkagem para a biblioteca personalizada
+link_directories(/home/guilherme/wwpcamera/lib/WTLIB-0.3.3-Linux/lib)
 
-# Defina o executável
-add_executable(main_node src/main.cpp src/backend.cpp)
+# Adicionar executável
+add_executable(main_node main.cpp backend.cpp)
 
-# Linke a biblioteca ao executável
+# Linkar bibliotecas ao executável
 target_link_libraries(main_node
   ${catkin_LIBRARIES}
-  libwwp-data-sdk.a
+  /home/guilherme/wwpcamera/lib/WTLIB-0.3.3-Linux/lib/libinternal.a
+  /home/guilherme/wwpcamera/lib/WTLIB-0.3.3-Linux/lib/libcore.a
+  /home/guilherme/wwpcamera/lib/WTLIB-0.3.3-Linux/lib/libsources.so
+  ${CMAKE_THREAD_LIBS_INIT}
+  pthread
+  stdc++
 )
