@@ -1,8 +1,8 @@
 #ifndef THERMALIMAGE_H
 #define THERMALIMAGE_H
 
-#include "wtlib/wtlib_export.h"
-#include "wtlib/sources/thermalsource.h"
+#include "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/include/wtlib/wtlib_export.h"
+#include "thermalsource.h"
 
 #include <memory>
 #include <optional>

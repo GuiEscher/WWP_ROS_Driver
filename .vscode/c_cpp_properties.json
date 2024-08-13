@@ -10,7 +10,8 @@
                 "/home/guilherme/catkin_ws/src/workswell_camera_driver/include/**",
                 "/home/guilherme/wwpcamera/src/wwpcamera/include/**",
                 "/usr/include/**",
-                "${workspaceFolder}/src/wwpcamera/src/lib/wwp-data-sdk-0.3.0-linux/wwp-data-sdk/headers"
+                "${workspaceFolder}/src/wwpcamera/src/lib/wwp-data-sdk-0.3.0-linux/wwp-data-sdk/headers",
+                "/usr/include/opencv4"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

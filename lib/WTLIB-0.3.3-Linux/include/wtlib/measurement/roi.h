@@ -1,9 +1,9 @@
 #ifndef WTL_ROI_H
 #define WTL_ROI_H
 
-#include "wtlib/measurement/colortypes.h"
-#include "wtlib/measurement/point.h"
-#include "wtlib/measurement/rectangle.h"
+#include "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/include/wtlib/measurement/colortypes.h"
+#include "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/include/wtlib/measurement/point.h"
+#include "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/include/wtlib/measurement/rectangle.h"
 
 #include <set>
 #include <string>

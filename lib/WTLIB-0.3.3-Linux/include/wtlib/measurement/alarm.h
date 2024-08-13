@@ -1,7 +1,7 @@
 #ifndef WTL_ALARM_H
 #define WTL_ALARM_H
 
-#include "wtlib/measurement/colortypes.h"
+#include "colortypes.h"
 
 #include <limits>
 #include <string>

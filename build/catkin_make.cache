@@ -1,2 +1,2 @@
 
--DCATKIN_DEVEL_PREFIX=/home/guilherme/wwpcamera/devel -DCMAKE_INSTALL_PREFIX=/home/guilherme/wwpcamera/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/guilherme/wwpcamera/WWP_ROS_Driver/devel -DCMAKE_INSTALL_PREFIX=/home/guilherme/wwpcamera/WWP_ROS_Driver/install -G Unix Makefiles

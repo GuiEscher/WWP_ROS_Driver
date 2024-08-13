@@ -1,0 +1,8 @@
+# Configurações principais de diretórios e parametros de calibragem
+
+
+# Diretório da workswell onde as fotos estão sendo salvas
+source_directory: "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/example/resources"
+
+# Diretório para o qual as fotos vindas da workswell serão enviadas
+destination_directory: "/home/guilherme/wwpcamera/WWP_ROS_Driver/src/wwpcamera/saved_photos" 

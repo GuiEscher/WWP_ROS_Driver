@@ -1,7 +1,7 @@
 #ifndef WTL_MEASUREMENTCONTEXT_H
 #define WTL_MEASUREMENTCONTEXT_H
 
-#include "wtlib/measurement/colortypes.h"
+#include "colortypes.h"
 
 #include <memory>
 #include <optional>

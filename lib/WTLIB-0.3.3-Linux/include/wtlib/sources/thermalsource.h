@@ -1,7 +1,7 @@
 #ifndef THERMALSOURCE_H
 #define THERMALSOURCE_H
 
-#include "wtlib/wtlib_export.h"
+#include "/home/guilherme/wwpcamera/WWP_ROS_Driver/lib/WTLIB-0.3.3-Linux/include/wtlib/wtlib_export.h"
 
 #include <memory>
 #include <string>
